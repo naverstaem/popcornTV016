@@ -1666,7 +1666,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @media print { .visible-print-inline-block { display: inline-block !important; } }
 
 @media print { .hidden-print { display: none !important; } }
-* { outline: none !important; }
+.btn:focus, input:focus { outline: none !important; }
 
 .carousel-indicators { bottom: -80px; }
 .carousel-indicators > li { border-color: #dbdbdb; width: 20px; height: 20px; margin: 2px; }
@@ -1704,7 +1704,7 @@ input::placeholder, textarea::placeholder { font-size: 16px; text-transform: non
 .form__header { -moz-border-radius: 16px 16px 0 0; -webkit-border-radius: 16px; border-radius: 16px 16px 0 0; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; color: #ffffff; font-family: "pf_din_text_cond_prolight"; background: #ff8b1d; text-align: center; padding: 30px 45px; }
 .form__header h3 { font-family: "pf_din_text_cond_prolight"; font-size: 30px; text-transform: none; margin: 0; line-height: 1em; }
 .form__header h3 span { font-family: "pf_din_text_cond_prothin"; font-size: 24px; }
-.form__body { background: #fff; margin-top: 0; font-family: "pf_din_text_cond_prolight"; color: #787878; -moz-border-radius: 0 0 12px 12px; -webkit-border-radius: 0; border-radius: 0 0 12px 12px; padding: 20px 30px 60px; }
+.form__body { background: #fff; margin-top: 0; font-family: "pf_din_text_cond_prolight"; color: #787878; -moz-border-radius: 0 0 12px 12px; -webkit-border-radius: 0; border-radius: 0 0 12px 12px; padding: 20px 30px 48px; }
 .form__body h3 { font-size: 18px; margin-top: 3px; }
 .form__counter { margin-bottom: 10px; }
 .form__form { padding: 0 20px; }
@@ -1739,6 +1739,10 @@ header .header__price .price--new, .header--bottom .header__price .price--new { 
 header .header__price .price--new span, .header--bottom .header__price .price--new span { font-family: "DINRoundProRegular"; font-size: 24px; line-height: 1em; }
 header .header__price .price--old, .header--bottom .header__price .price--old { display: inline-block; font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #507819; margin-top: 5px; }
 header .header__form, .header--bottom .header__form { position: relative; z-index: 0; margin-top: 10px; }
+
+.about { background: url(../img/about_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 45px 0 120px; text-align: center; font-family: "pf_din_text_cond_prolight"; font-size: 24px; color: #ffffff; }
+.about h2 { color: #fff; }
+.about p { margin-top: 30px; padding: 0 50px; }
 
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; }
