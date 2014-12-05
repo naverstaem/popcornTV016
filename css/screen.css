@@ -1783,7 +1783,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 
 .other { margin-top: 0; padding-top: 30px; padding-bottom: 70px; }
 .other h2 { margin-bottom: 20px; }
-.other__item { width: 100%; text-align: center; padding: 25px 10px; border: solid 2px #e6e6e6; margin-top: 10px; }
+.other__item { width: 100%; text-align: center; padding: 25px 10px; border: solid 2px #e6e6e6; margin-top: 10px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .other__caption { font-size: 24px; font-family: "conv_pfdintextcondpro-light"; margin-bottom: 10px; color: #281e1e; text-transform: none; }
 .other__img { display: inline-block; }
 .other__img img { display: block; width: 100%; max-width: 290px; }
@@ -1803,7 +1803,7 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .other__form form .button--other:hover, .other__form form .button--other:focus { background: #ffc73b; color: #ffffff; }
 .other__form form .button--other:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 .other__price { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; line-height: 1.4em; text-align: left; display: inline-block; vertical-align: middle; margin-top: 20px; width: 49%; }
-.other__price h3 { font-family: "bebas_neuebook"; font-size: 48px; font-weight: normal; color: #1e1e1e; vertical-align: middle; margin: 0; line-height: 0.6em; }
+.other__price h3 { font-family: "pf_din_text_cond_prothin"; font-size: 48px; font-weight: normal; color: #1e1e1e; vertical-align: middle; margin: 0; line-height: 0.6em; }
 .other__price h3 span { font-family: "als_rublregular"; font-size: 24px; }
 .other__price h4 { display: inline-block; font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #787878; font-weight: normal; margin: 0; }
 
