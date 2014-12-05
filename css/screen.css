@@ -1812,11 +1812,4 @@ footer p { font-size: 16px; margin-bottom: 5px; color: #787878; }
 footer a { color: #23bed2; text-decoration: underline; }
 footer a:hover, footer a:active, footer a:focus { color: #23bed2; text-decoration: none; }
 
-@media (max-width: 992px) { .requirements__img { top: 100px; }
-  .you-can__img { margin-top: 0; }
-  .you-can h2 { left: 0; }
-  .features__text { padding-top: 100px; }
-  header .form__body, .header--bottom .form__body { background: rgba(255, 255, 255, 0.7); }
-  header .form__body h3, .header--bottom .form__body h3 { color: #1e1e1e; }
-  header .counter p, .header--bottom .counter p { color: #1e1e1e; } }
 @media (max-width: 768px) { h1, h2 { font-size: 32px !important; } }
