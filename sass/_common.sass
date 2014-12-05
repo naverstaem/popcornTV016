@@ -1,0 +1,174 @@
+//@import "../css/bootstrap.min.css"
+@import "../css/fonts/fonts.css"
+
+*
+  outline: none !important
+
+.carousel-indicators
+  bottom: -80px
+  > li
+    border-color: #dbdbdb
+    width: 20px
+    height: 20px
+    margin: 2px
+    &.active
+      background: #23a5d1
+      width: 20px
+      height: 20px
+      border-color: #23a5d1
+      margin: 2px
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+input, textarea
+  +placeholder
+    font-size: 16px
+    text-transform: none
+    color: #5a5a5a
+    font-family: 'pf_din_text_cond_prolight'
+
+.container, .container-fluid
+  max-width: 1000px
+
+.btn
+  text-transform: none
+  color: #ffffff
+  +border-radius(4px)
+  +background-clip(padding-box)
+  background-color: #8bc727
+  +box-shadow(inset 0 -6px 0 rgb(124,182,33))
+
+  &:hover, &:focus
+    background: lighten(#8bc727, 10%)
+    color: #ffffff
+  &:active
+    +box-shadow(0 0 0 0)
+.btn--blue
+  text-transform: none
+  +box-shadow(0 4px 0 #1e659c)
+  +background(linear-gradient(to left, #159fb9 0%, #1571d5 100%))
+
+  &:hover, &:focus
+    +background(linear-gradient(to left, lighten(#159fb9,5%) 0%, lighten(#1571d5,5%) 100%))
+  &:active
+    +box-shadow(0 0 0 0)
+
+.title
+  color: #3c3c3c
+  text-align: center
+  font-size: 48px
+  text-transform: none
+  font-family: 'DINRoundProBlack'
+  span
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 0
+  text-align: center
+
+  .bl
+    display: inline-block
+    text-align: center
+    margin: 0 5px
+    span
+      width: 60px
+      height: 60px
+      display: inline-block
+      font-family: 'pf_din_text_cond_prothin'
+      font-size: 36px
+      color: #5a5a5a
+      padding-top: 5px
+      position: relative
+      +border-radius(4px)
+      +background-clip(padding-box)
+      background: #595959
+      +background-image(linear-gradient(to bottom, rgb(240,240,240) 0%, rgb(250,250,250) 50%, rgb(210,210,210) 51%, rgb(230,230,230) 100%))
+
+      //
+      //&:after
+      //  position: absolute
+      //  content: ""
+      //  top: 30px
+      //  left: 0
+      //  width: 100%
+      //  height: 4px
+      //  +background-image(linear-gradient(to bottom,  rgba(0,0,0,0) 0%, #000 100%))
+
+
+
+  p
+    font-family: 'conv_segoeprintregular'
+    font-size: 14px
+    color: #787878
+    &.counter__title
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 14px
+
+
+.form
+  text-align: center
+
+  &__header
+    +border-radius(16px 16px 0 0)
+    +background-clip(padding-box)
+    color: #ffffff
+    font-family: 'pf_din_text_cond_prolight'
+    background: #ff8b1d
+    text-align: center
+    padding: 30px 45px
+    h3
+      font-family: 'pf_din_text_cond_prolight'
+      font-size: 30px
+      text-transform: none
+      margin: 0
+      line-height: 1em
+      span
+        font-family: 'pf_din_text_cond_prothin'
+        font-size: 24px
+
+
+  &__body
+    background: #fff
+    margin-top: 0
+    font-family: 'pf_din_text_cond_prolight'
+    color: #787878
+    +border-radius(0 0 12px 12px)
+    padding: 20px 30px 60px
+    h3
+      font-size: 18px
+      margin-top: 3px
+
+    &__price
+    .price__old
+    .price__new
+  &__counter
+    margin-bottom: 10px
+  &__shadow
+  &__form
+    padding: 0 20px
+    input
+      color: #282828
+      width: 100%
+      height: 50px
+      margin-bottom: 10px
+      padding-left: 15px
+      font-size: 18px
+      +border-radius(2px)
+      +background-clip(padding-box)
+      border: 2px solid #e5e5e5
+      +border-radius(4px)
+      +background-clip(padding-box)
+      background: #ffffff
+      &:focus
+        +box-shadow(0 0 9px rgba(204,62,82,.13))
+
+
+    button
+      width: 100%
+      font-size: 30px
+      margin-top: 15px
+      height: 70px
+      font-family: 'pf_highway_sans_probold'
