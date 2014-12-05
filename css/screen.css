@@ -1744,6 +1744,18 @@ header .header__form, .header--bottom .header__form { position: relative; z-inde
 .about h2 { color: #fff; }
 .about p { margin-top: 30px; padding: 0 50px; }
 
+.info__text { font-family: "pf_din_text_cond_prolight"; font-size: 18px; color: #1e1e1e; }
+.info__text p { margin-top: 2px; }
+.info__video { text-align: center; }
+.info__video_link { display: inline-block; }
+.info__video_link:hover .info__video_link_in span { opacity: 1; filter: alpha(opacity=100); }
+.info__video_link:hover .info__video_link_text { text-decoration: underline; }
+.info__video_link_in { position: relative; }
+.info__video_link_in span { position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 1; opacity: 0; filter: alpha(opacity=0); background: rgba(0, 0, 0, 0.5); -webkit-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.info__video_link_in span:before { position: absolute; content: ""; background: url(../img/play.png) no-repeat; width: 81px; height: 81px; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.info__video_link_in { width: 340px; height: 340px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+.info__video_link_text { font-family: "conv_segoeprintregular"; font-size: 16px; color: #6ea01e; margin-top: 15px; }
+
 .works { padding: 40px 0; }
 .works h2 { margin-bottom: 20px; }
 .works__item { margin-top: 10px; text-align: center; }

@@ -166,7 +166,59 @@ header
     margin-top: 30px
     padding: 0 50px
 
-.intro
+.info
+  &__text
+    font-family: 'pf_din_text_cond_prolight'
+    font-size: 18px
+    color: #1e1e1e
+    p
+      margin-top: 2px
+  &__video
+    text-align: center
+  &__video_link
+    display: inline-block
+    &:hover
+      .info__video_link_in
+        span
+          +opacity(1)
+      .info__video_link_text
+        text-decoration: underline
+  &__video_link_in
+    position: relative
+    span
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: 1
+      +opacity(0)
+      background: rgba(#000, .5)
+      +tr(all .5s)
+      +border-radius(50%)
+      &:before
+        position: absolute
+        content: ''
+        background: url(../img/play.png) no-repeat
+        width: 81px
+        height: 81px
+        top: 50%
+        left: 50%
+        +transform(translate(-50%,-50%))
+  &__video_link_in
+    width: 340px
+    height: 340px
+    +border-radius(50%)
+
+  &__video_link_text
+    font-family: 'conv_segoeprintregular'
+    font-size: 16px
+    color: #6ea01e
+    margin-top: 15px
+
+
+
+
 
 
 
