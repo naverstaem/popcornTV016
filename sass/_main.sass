@@ -106,7 +106,8 @@
 
 header
   position: relative
-  background: url(../img/header_bg.jpg) 54%, 100%
+  background: url(../img/header_bg.jpg) no-repeat 56% 100%
+  background-size: cover
   overflow: hidden
   padding: 40px 0
 
@@ -176,6 +177,7 @@ header
     text-align: center
   &__video_link
     display: inline-block
+    max-width: 100%
     &:hover
       .info__video_link_in
         span
@@ -184,6 +186,10 @@ header
         text-decoration: underline
   &__video_link_in
     position: relative
+    max-width: 100%
+    width: 340px
+    height: auto
+    +border-radius(50%)
     span
       position: absolute
       top: 0
@@ -195,6 +201,7 @@ header
       background: rgba(#000, .5)
       +tr(all .5s)
       +border-radius(50%)
+      max-width: 100%
       &:before
         position: absolute
         content: ''
@@ -204,10 +211,7 @@ header
         top: 50%
         left: 50%
         +transform(translate(-50%,-50%))
-  &__video_link_in
-    width: 340px
-    height: 340px
-    +border-radius(50%)
+
 
   &__video_link_text
     font-family: 'conv_segoeprintregular'
@@ -256,6 +260,8 @@ header
     +border-radius(50%)
     margin-right: 15px
     vertical-align: middle
+    img
+      +border-radius(50%)
   &__head
     text-align: center
     display: inline-block
@@ -321,14 +327,6 @@ header
 
 
 
-
-.info
-
-
-
-
-
-
 .header--bottom
   @extend header
   padding-top: 30px
@@ -338,7 +336,7 @@ header
 
 .other
   margin-top: 0
-  padding-top: 30px
+  padding-top: 40px
   padding-bottom: 70px
   h2
     margin-bottom: 20px
@@ -347,7 +345,7 @@ header
     text-align: center
     padding: 25px 10px
     border: solid 2px #e6e6e6
-    margin-top: 10px
+    margin-top: 20px
     +border-radius(4px)
   &__caption
     font-size: 24px

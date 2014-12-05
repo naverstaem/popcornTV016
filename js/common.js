@@ -97,6 +97,7 @@ head.ready(function() {
 	$('#form2').validate();
 	$('#form3').validate();
 	$('#form4').validate();
+	$('#form5').validate();
 
 
 
